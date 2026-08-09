@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directories:
+     - "/"
+     - "/tests"
+    schedule:
+      interval: "cron"
+      cronjob: "0 */3 * * *"
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
